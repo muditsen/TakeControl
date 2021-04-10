@@ -46,5 +46,19 @@
         android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/iv_appIcon" />
 
+    <TextView
+        android:id="@+id/tv_setWallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Set Wallapaper"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:visibility="gone"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tv_mostUsedApp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

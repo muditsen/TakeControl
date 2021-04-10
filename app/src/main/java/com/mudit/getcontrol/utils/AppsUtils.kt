@@ -18,7 +18,7 @@ class AppsUtils {
                 ctx.getSystemService(Context.USAGE_STATS_SERVICE) as UsageStatsManager
 
             val cal: Calendar = Calendar.getInstance()
-            cal.add(Calendar.DAY_OF_YEAR, -5)
+            cal.add(Calendar.DAY_OF_YEAR, -1)
 
             val listOfData = queryManager.queryUsageStats(
                 UsageStatsManager.INTERVAL_BEST,
@@ -36,7 +36,7 @@ class AppsUtils {
                         AppInfo(
                             appData.loadLabel(packageManager).toString(),
                             appData.packageName,
-                            item.totalTimeVisible,
+                            item.totalTimeInForeground,
                             appData.loadIcon(packageManager)
                         )
                     )
